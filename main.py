@@ -78,7 +78,7 @@ if st.session_state.get('authentication_status'):
     
     # Set page layout and title.
     st.set_page_config(page_title="Ethics Chatbot", page_icon=":butterfly:", layout="wide")
-    st.header(":butterfly: Integrity AI")
+    # st.header(":butterfly: Integrity AI")
     st.image("image.png", width=400)
     st.markdown("###### Advancing dialogue on ethics for educators.")
     # st.markdown("###### Your starting point for educator ethics")
