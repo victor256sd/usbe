@@ -2,6 +2,8 @@
 # Copyright (c) 2026 victor256sd
 # All rights reserved.
 #
+# 05.06.2026 - Added logo.
+#
 # 04.28.2026 - Updated landing page language based on NASDTEC direction.
 #
 # 04.23.2026 - Updated instructions with information obtained from beta testing
@@ -74,8 +76,10 @@ if st.session_state.get('authentication_status'):
     f = Fernet(key)
     INSTRUCTION = f.decrypt(INSTRUCTION_ENCRYPTED).decode()
 
+    st.image("image.png", width=400, caption="EDSE")
+    
     # Set page layout and title.
-    st.set_page_config(page_title="Integrity AI", page_icon=":butterfly:", layout="wide")
+    st.set_page_config(page_title="Ethics Chatbot", page_icon=":butterfly:", layout="wide")
     st.header(":butterfly: Integrity AI")
     st.markdown("###### Advancing dialogue on ethics for educators.")
     # st.markdown("###### Your starting point for educator ethics")
