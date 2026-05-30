@@ -79,7 +79,7 @@ if st.session_state.get('authentication_status'):
     # Set page layout and title.
     st.set_page_config(page_title="Ethics Chatbot", page_icon=":butterfly:", layout="wide")
     # st.header(":butterfly: Integrity AI")
-    st.image("image.png", width=800)
+    st.image("image.png", width=700)
     # st.markdown("###### Advancing dialogue on ethics for educators.")
     # st.markdown("###### Your starting point for educator ethics")
     st.markdown("NASDTEC serves as a national advocate for the advancement of ethical practice within the education profession. To that end, the Model Code of Ethics for Educators (MCEE) was developed under NASDTEC’s leadership by a diverse and representative task force of educational practitioners and launched in 2015. Subsequently, NASDTEC established the National Council for the Advancement of Educator Ethics (NCAEE), which is charged with promoting and fostering awareness and understanding of the MCEE.")
