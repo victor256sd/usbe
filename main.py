@@ -87,7 +87,7 @@ if st.session_state.get('authentication_status'):
         <img src="https://raw.githubusercontent.com/victor256sd/thecode/main/image.png" alt="edmse" width=700 usemap="#workmap">
         <map name="workmap">
             <area shape="rect" coords="420,14,691,94" alt="nasdtec" href=":https://www.nasdtec.net">
-            <area shape="circle" coords="196,171,66" alt="ncaee" href=":http://www.educatorethics.org">
+            <area shape="circle" coords="196,171,66" alt="ncaee" href="http://www.educatorethics.org">
         </map>        
         """,
         unsafe_allow_html=True
