@@ -81,7 +81,7 @@ if st.session_state.get('authentication_status'):
     # Set page layout and title.
     st.set_page_config(page_title="Ethics Chatbot", page_icon=":butterfly:", layout="wide")
     # st.header(":butterfly: Integrity AI")
-    st.image("image.png", width=700)
+    # st.image("image.png", width=700)
     st.markdown(
         f"""
         <img src="https://raw.githubusercontent.com/victor256sd/thecode/main/image.png" alt="edmse" width=700 usemap="#workmap">
