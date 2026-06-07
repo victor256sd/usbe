@@ -2,15 +2,12 @@
 # Copyright (c) 2026 victor256sd
 # All rights reserved.
 #
+# 06.06.2026 - Adding CSS adjustment to remove Built with Streamlit border.
 # 06.05.2026 - Added image map for logo.
-#
 # 05.06.2026 - Added logo.
-#
 # 04.28.2026 - Updated landing page language based on NASDTEC direction.
-#
 # 04.23.2026 - Updated instructions with information obtained from beta testing
 # survey.
-#
 # 02.27.2026 - Instructions reverted to 11/30/2025 instruction set, vector store
 # reduced to MCEE documents only.
 #
@@ -32,19 +29,30 @@ def disable_button():
     st.session_state.disabled = True        
 
 # Definitive CSS selectors for Streamlit 1.45.1+
-st.markdown("""
-<style>
-    div[data-testid="stToolbar"] {
-        display: none !important;
-    }
-    div[data-testid="stDecoration"] {
-        display: none !important;
-    }
-    div[data-testid="stStatusWidget"] {
-        visibility: hidden !important;
-    }
-</style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+# <style>
+#     div[data-testid="stToolbar"] {
+#         display: none !important;
+#     }
+#     div[data-testid="stDecoration"] {
+#         display: none !important;
+#     }
+#     div[data-testid="stStatusWidget"] {
+#         visibility: hidden !important;
+#     }
+# </style>
+# """, unsafe_allow_html=True)
+
+# Injecting CSS to completely wipe out the embedded footer frame
+hide_embedded_frame = """
+    <style>
+    /* Hides the 'Built with Streamlit' footer and fullscreen toolbar */
+    footer {visibility: hidden;}
+    [data-testid="stEmbedFooter"] {display: none !important;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_embedded_frame, unsafe_allow_html=True)
 
 # Load config file with user credentials.
 with open("config.yaml") as file:
