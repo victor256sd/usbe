@@ -80,8 +80,8 @@ if st.session_state.get('authentication_status'):
     INSTRUCTION = f.decrypt(INSTRUCTION_ENCRYPTED).decode()
     
     # Set page layout and title.
-    st.set_page_config(page_title="USBE Chatbot", page_icon=":butterfly:", layout="wide")
-    st.header(":butterfly: USBE AI")
+    st.set_page_config(page_title="USBE Chatbot", page_icon=":deer:", layout="wide")
+    st.header(":deer: USBE AI")
     # st.image("image.png", width=700)
     # st.markdown("###### Advancing dialogue on ethics for educators.")
     # st.markdown("###### Your starting point for educator ethics")
